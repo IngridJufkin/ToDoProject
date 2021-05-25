@@ -33,7 +33,7 @@
         <label class="block text-sm font-medium text-gray-700">Name</label>
 
         <span class="block text-sm font-medium text-gray-700 p-1">
-          {{ name }}
+          {{ this.$store.state.name}}
         </span> 
 
       </div>

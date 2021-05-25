@@ -42,9 +42,7 @@ export default {
   data() {
     return {
     apiURL: process.env.VUE_APP_BACKEND_URL,
-      form: {
-        userName: this.$store.state.name
-      },
+  
   existingUserNames: [],
     };
   },
@@ -54,6 +52,7 @@ export default {
   }),
   beforeMount() {
     this.getAllUsers();
+    this.$store.state.name
   },
   methods: {
   selectName(event) {

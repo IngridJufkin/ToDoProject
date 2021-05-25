@@ -74,7 +74,7 @@ export default {
         },
       ],
      form: {
-        userName: "John"
+        userName: ""
       },
     };
   },
