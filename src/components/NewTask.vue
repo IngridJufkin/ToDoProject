@@ -137,7 +137,6 @@ export default {
     nameAlias: "name",
   }),
   },
-
   methods: {
     async addTodo() {
       let newName = this.name;
