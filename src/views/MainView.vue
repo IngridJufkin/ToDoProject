@@ -17,7 +17,7 @@
       <div class="min-h-screen flex overflow-x-scroll py-12">
         <div v-for="column in columns" :key="column.title" class="bg-gray-100 rounded-lg px-3 py-3 column-width rounded mr-4">
           <p class="text-gray-700 font-semibold font-sans tracking-wide text-sm">
-            {{ column.title }}
+            {{column.title}}
           </p>
           <!-- Draggable component comes from vuedraggable. It provides drag & drop functionality -->
           <draggable
@@ -62,7 +62,6 @@ export default {
   data() {
     return {
       apiURL: process.env.VUE_APP_BACKEND_URL,
-      //connections: true
       columns: [
         {
           title: "Todo",
@@ -94,8 +93,6 @@ export default {
 
     async getTasksByName() {
       let nameInput = this.$store.state.name;
-        //eslint-disable-next-line no-console
-      //console.log(nameInput); //objet mille sees on property
       const getTasksName = await axios({
         url: `${this.apiURL}api/getTasksByName/${nameInput}`, //get tasks By Name
         method: "GET",
