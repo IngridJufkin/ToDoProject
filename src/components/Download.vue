@@ -59,6 +59,7 @@
 <script>
 import axios from 'axios';
 export default {
+  apiURL: process.env.VUE_APP_BACKEND_URL,
   data () {
     return {
       form: {
@@ -71,7 +72,7 @@ export default {
   methods: {
     async getFile () {
       await axios({
-        url: 'api/downloadFile',
+        url: `${this.apiURL}api/downloadFile`,
         method: 'POST',
         data: this.form,
         responseType: 'arraybuffer'
