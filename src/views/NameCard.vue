@@ -42,7 +42,7 @@ export default {
       form: {
         name: ""
       },
-  existingUserNames: [],
+ existingUserNames: [],
     };
   },
  computed: mapState({
@@ -51,6 +51,7 @@ export default {
   }),
   beforeMount() {
     this.getAllUsers();
+    this.$store.state.name
   },
   methods: {
   async getAllUsers() {
