@@ -51,6 +51,7 @@ export default {
   }),
   beforeMount() {
     this.getAllUsers();
+    this.$store.state.name
   },
   methods: {
   async getAllUsers() {
