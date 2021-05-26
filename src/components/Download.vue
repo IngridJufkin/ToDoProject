@@ -59,9 +59,9 @@
 <script>
 import axios from 'axios';
 export default {
-  apiURL: process.env.VUE_APP_BACKEND_URL,
   data () {
     return {
+      apiURL: process.env.VUE_APP_BACKEND_URL,
       form: {
         fileType: 'PDF',
         todo: false,
