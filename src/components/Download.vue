@@ -72,7 +72,7 @@ export default {
   methods: {
     async getFile () {
       await axios({
-        url: `${this.apiURL}api/downloadFile`,
+        url: `${this.apiURL}/api/downloadFile`,
         method: 'POST',
         data: this.form,
         responseType: 'arraybuffer'
