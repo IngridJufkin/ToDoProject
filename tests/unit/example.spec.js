@@ -10,39 +10,6 @@ describe("Badge.vue", () => {
     expect(wrapper.contains('.test')).toBe(true);
 
   });
-  //------FAKE TEST RUNS -------------
-  // it('should set correct classes for task', async () => {
-
-  //   const TaskCard = {
-  //     props: ['color'],
-  //     template: '<div>{{color}}</div>'
-  //   }
-
-  //   const wrapper = mount(TaskCard, {
-  //     propsData: {
-  //       color: 'purple',
-  //     },
-  //   })
-  //     expect(wrapper.text()).toBe('purple');
-  // });
-  //----------------------------------
-
-  //it('should set correct classes for task', async () => {
-
-  // const TaskCardNew = {
-  //   props: ['task.color'],
-  //   template: '<div>{{task.color}}</div>'
-  // }
-  //----------TEST TRIAL ---------------
-  // const wrapper = mount(TaskCard, {
-  //   propsData: {
-  //     color: '',
-  //   },
-  // })
-  //   await wrapper.setData({color: this.propsData.testcolor })
-  //     expect(wrapper.text()).toBe('purple');
-  // });
-
   //-----------------Only Taskcard colour class controll ------------
   describe('TaskCard.vue', () => {
     it('checks color class', async () => {
