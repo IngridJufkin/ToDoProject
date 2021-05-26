@@ -7,7 +7,7 @@
       <div class="col">
 
     <select v-model="form.name" class="form-control">
-    <option disabled selected value="">Please select value</option>
+    <option disabled selected value="">Please select or enter name</option>
     <option v-for="existingUserName in existingUserNames" :value="existingUserName" :key="existingUserName">{{ existingUserName}}</option>
   </select>
 
